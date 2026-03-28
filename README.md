@@ -5,7 +5,7 @@ Welcome to the **People Tracking Camera with Servo** project! 🎥🤖 This proj
 ## Table of Contents
 - [Introduction](#introduction)
 - [Components](#components)
-- [Installation](#installation)
+- [Software Installation](#software-installation)
 - [Usage](#usage)
 - [Code Structure](#code-structure)
 - [Contributing](#contributing)
