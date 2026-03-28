@@ -26,47 +26,39 @@ This project is designed to demonstrate how a camera can be used to track indivi
    ```bash
    sudo apt update && sudo apt upgrade -y
 
-Enable the camera and GPIO
-bash
-
-sudo raspi-config
-
+2. Enable the camera and GPIO
+    ```bash
+    sudo raspi-config
+    ```
     Interface Options → Camera → Enable
 
     (Optional) Interface Options → SPI/I2C → Enable
 
-Install system dependencies
-bash
-
-sudo apt install python3 python3-pip python3-venv git pigpio
-
-Start the pigpio daemon
-The pigpio library communicates with a background daemon. Install and enable it:
-bash
-
-sudo systemctl enable pigpiod
-sudo systemctl start pigpiod
-
-Verify it’s running:
-bash
-
-sudo systemctl status pigpiod
-
-Clone this repository
-bash
-
-git clone https://github.com/yourusername/people-tracking-camera.git
-cd people-tracking-camera
-
-Create a virtual environment and install Python packages
-bash
-
-python3 -m venv venv
-source venv/bin/activate
-pip install -r requirements.txt
-
-
-
+3. Install system dependencies
+    ```bash
+    sudo apt install python3 python3-pip python3-venv git pigpio
+    ```
+4. Start the pigpio daemon
+    The pigpio library communicates with a background daemon. Install and enable it:
+    ```bash
+    sudo systemctl enable pigpiod
+    sudo systemctl start pigpiod
+    ```
+    Verify it’s running:
+    ```bash
+    sudo systemctl status pigpiod
+    ```
+5. Clone this repository
+    ```bash
+    git clone https://github.com/yourusername/people-tracking-camera.git
+    cd people-tracking-camera
+    ```
+6. Create a virtual environment and install Python packages
+    ```bash
+    python3 -m venv venv
+    source venv/bin/activate
+    pip install -r requirements.txt
+    ```
 ## Usage
 1. Connect the hardware components as described in the documentation.
 2. Run the main script:
