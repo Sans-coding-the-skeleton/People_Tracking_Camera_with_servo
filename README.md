@@ -65,7 +65,7 @@ This project is designed to demonstrate how a camera can be used to track indivi
 
 ## Code Structure
 - `tracking.py`: The main script for running the application.
-- `calibration.py`: Contains the code for calibrating the servo motor.
+- `calibration.py`: Contains the code for calibrating the servo motor if you use one different to MG90S.
 
 ## Contributing
 We welcome contributions! Please follow these steps:
