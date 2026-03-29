@@ -35,6 +35,7 @@ This project is designed to demonstrate how a camera can be used to track indivi
     ```
 3. Clone this repository
     ```bash
+    cd ~/
     git clone https://github.com/Sans-coding-the-skeleton/Person_Tracking_Camera_with_servo.git
     cd Person_Tracking_Camera_with_servo
     ```
@@ -43,6 +44,15 @@ This project is designed to demonstrate how a camera can be used to track indivi
     python3 -m venv venv
     source venv/bin/activate
     pip install -r requirements.txt
+    ```
+5. Install pigpio
+    ```bash
+    cd /tmp
+    git clone https://github.com/joan2937/pigpio.git
+    cd pigpio
+    make
+    sudo make install
+    cd ~/Person_Tracking_Camera_with_servo
     ```
 5. Run pigpio
     ```bash
