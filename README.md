@@ -39,13 +39,16 @@ This project is designed to demonstrate how a camera can be used to track indivi
     git clone https://github.com/Sans-coding-the-skeleton/Person_Tracking_Camera_with_servo.git
     cd Person_Tracking_Camera_with_servo
     ```
-6. Create a virtual environment and install Python packages
+4. Create a virtual environment and install Python packages
     ```bash
     python3 -m venv venv
     source venv/bin/activate
     pip install -r requirements.txt
     ```
-5. 
+5. Run pigpio
+    ```bash
+    sudo pigpiod
+    ```
 ## Usage
 1. Connect the hardware components as described in the documentation.
 2. Run the main script:
